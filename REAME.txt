@@ -1,0 +1,24 @@
+Friday, April 7
+
+2 versions --> explain the bottom level
+
+This my experience when testing the last iteration of iterative deepening search
+and the full iterative deepening search
+
+The result is:
+
+For solution has the length of 4, Time taken to run the last iteration 0.0013129711151123047
+For solution has the length of 4, Time taken to run full 0.0029802322387695312
+For solution has the length of 8, Time taken to run the last iteration 0.049353837966918945
+For solution has the length of 8, Time taken to run full 0.10139989852905273
+For solution has the length of 10, Time taken to run the last iteration 1.1008450984954834
+For solution has the length of 10, Time taken to run full 1.9244379997253418
+For solution has the length of 12, Time taken to run the last iteration 1.4210882186889648
+For solution has the length of 12, Time taken to run full 8.012397050857544
+
+For both of the solution, in the last iteration, we will break if we reach the solution, so that
+most of the time, we never complete the bottom level
+
+Look at the first 3 results, we see that the time difference is not much difference. Because, we can see that
+because in a tree bottom level contain most of the node. So that the iteration of the level above the bottom
+level will be insignificant.
